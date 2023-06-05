@@ -1,0 +1,64 @@
+* {
+    font-family: 'Noto Sans', sans-serif;
+    color: #333333;
+}
+
+.body {
+    text-align: center;
+    padding: 10px 40px 20px 40px;
+    border-radius: 10px;
+
+    .content {
+        width: max-content;
+
+        .title {
+            margin: 3px;
+            font-weight: 600;
+        }
+
+        #originName {
+            margin-top: 0;
+            font-weight: 500;
+        }
+    }
+}
+
+.action {
+    .button-89 {
+        --b: 3px;
+        /* border thickness */
+        --s: .45em;
+        /* size of the corner */
+        --color: #373B44;
+
+        padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+        color: var(--color);
+        --_p: var(--s);
+        background:
+            conic-gradient(from 90deg at var(--b) var(--b), #3330 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+        transition: .3s linear, color 0s, background-color 0s;
+        outline: var(--b) solid #3330;
+        outline-offset: .6em;
+        font-size: 12px;
+
+        border: 0;
+
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+
+        cursor: pointer;
+    }
+
+    .button-89:hover,
+    .button-89:focus-visible {
+        --_p: 0px;
+        outline-color: var(--color);
+        outline-offset: .05em;
+    }
+
+    .button-89:active {
+        background: var(--color);
+        color: #fff;
+    }
+}

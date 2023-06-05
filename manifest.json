@@ -1,0 +1,27 @@
+{
+    "name": "Cache Cleaner",
+    "version": "1.0",
+    "description": "Clear Cache of Website",
+    "manifest_version": 3,
+    "author": "YUN Chamnab",
+    "icons": {
+        "16": "assets/icons/icon_32.png",
+        "32": "assets/icons/icon_32.png",
+        "48": "assets/icons/icon_48.png",
+        "128": "assets/icons/icon_128.png"
+    },
+    "action": {
+        "default_title": "Cache Cleaner",
+        "default_popup": "index.html"
+    },
+    "permissions": [
+        "scripting",
+        "activeTab",
+        "storage",
+        "browsingData",
+        "tabs"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    }
+}
